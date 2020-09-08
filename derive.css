@@ -4,8 +4,12 @@
     color: white;
 }
 
+.active{
+    font-weight: bold;
+}
+
 .logo{
-    height: 110px;
+    height: 100px;
 }
 
 .navbar-nav{
@@ -13,14 +17,33 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.navbar-toggler{
+    background-color: lightblue;
+}
+.navbar-collapse{
+    z-index: 1000;
+}
+
 .nav-link{
-    color: white;
+    color: white !important;
     font-size: 20px;
 }
+.navbar-toggler{
+    background-color: white !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-link {
+      color: #125486 !important;
+    }
+    .navbar-nav{
+        background-color: white;
+    }
+  }
 
 .nav-link:hover{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .mainText{
